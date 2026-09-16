@@ -19,9 +19,13 @@ print(userAge)
 
  Print `userAge` again, but this time unwrap `userAge` using the force unwrap operator.
  */
+print(userAge!)
 
 
 //:  Now use optional binding to unwrap `userAge`. If `userAge` has a value, print it to the console.
+if let age = userAge {
+    print(age)
+}
 
 
 /*:
