@@ -7,21 +7,21 @@
  */
 
 
-import SwiftUI
-import PlaygroundSupport
-
-struct MyTrackerView: View {
-
-    var body: some View {
-        VStack {
-
-        }
-        .frame(width: 320, height: 480)
-    }
-}
-
-PlaygroundPage.current.setLiveView(MyTrackerView())
-
+//import SwiftUI
+//import PlaygroundSupport
+//
+//struct MyTrackerView: View {
+//
+//    var body: some View {
+//        VStack {
+//
+//        }
+//        .frame(width: 320, height: 480)
+//    }
+//}
+//
+//PlaygroundPage.current.setLiveView(MyTrackerView())
+//
 
 /*:
  Build `MyTrackerView` in the code above so that it has all four of the following.

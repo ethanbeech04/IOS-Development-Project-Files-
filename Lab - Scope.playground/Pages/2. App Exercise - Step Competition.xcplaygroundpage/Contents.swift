@@ -5,10 +5,7 @@
 
  Below is a `User` struct and three `User` instances. These will be used throughout the exercises below to simulate competition in the fitness tracking app.
  */
-struct User {
-    var name: String
-    var stepsToday: Int
-}
+
 
 let stepMaster = User(name: "StepMaster", stepsToday: 8394)
 let activeSitter = User(name: "ActiveSitter", stepsToday: 9132)
@@ -24,8 +21,8 @@ func getWinner(competitors: [User]) -> User? {
     var topCompetitor: User?
 
     for competitor in competitors {
-        if let topCompetitor = topCompetitor {
-            if competitor.stepsToday > topCompetitor.stepsToday {
+        if let currentTopCompetitor = topCompetitor {
+            if competitor.stepsToday > currentTopCompetitor.stepsToday {
                 topCompetitor = competitor
             }
         } else {
@@ -40,6 +37,19 @@ func getWinner(competitors: [User]) -> User? {
 
 
 //:  Now write a failable initializer inside the `User` struct above that takes parameters `name` and `stepsToday` as an optional `String` and `Int`, respectively. The initializer should return `nil` if either of the parameters are `nil`. Use variable shadowing when unwrapping the two parameters.
+struct User {
+    var name: String
+    var stepsToday: Int
+
+    init?(name: String?, stepsToday: Int?) {
+        guard let name = name, let stepsToday = stepsToday else {
+            return nil
+        }
+
+        self.name = name
+        self.stepsToday = stepsToday
+    }
+}
 
 
 /*:

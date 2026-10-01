@@ -6,26 +6,26 @@
  This page will not compile until you fix it. That is on purpose.
  */
 
-
-import SwiftUI
-import PlaygroundSupport
-
-struct WaterTrackerView: View {
-    var glassesOfWater = 0
-
-    var body: some View {
-        VStack {
-            Text("Glasses of water: \(glassesOfWater)")
-            Button("Drink a glass") {
-                glassesOfWater += 1
-            }
-        }
-        .frame(width: 320, height: 480)
-    }
-}
-
-PlaygroundPage.current.setLiveView(WaterTrackerView())
-
+//
+//import SwiftUI
+//import PlaygroundSupport
+//
+//struct WaterTrackerView: View {
+//    var glassesOfWater = 0
+//
+//    var body: some View {
+//        VStack {
+//            Text("Glasses of water: \(glassesOfWater)")
+//            Button("Drink a glass") {
+//                glassesOfWater += 1
+//            }
+//        }
+//        .frame(width: 320, height: 480)
+//    }
+//}
+//
+//PlaygroundPage.current.setLiveView(WaterTrackerView())
+//
 
 /*:
  Fix `WaterTrackerView` in the code above so the page compiles. Run it and tap the button three times to confirm the number goes up.

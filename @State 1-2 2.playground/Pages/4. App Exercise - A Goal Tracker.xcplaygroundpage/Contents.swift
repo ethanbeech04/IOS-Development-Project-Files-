@@ -5,22 +5,22 @@
 
  One value, and three buttons that change it.
  */
-
-
-import SwiftUI
-import PlaygroundSupport
-
-struct GoalTrackerView: View {
-    var body: some View {
-        VStack {
-            Text("Step goal")
-
-        }
-        .frame(width: 320, height: 480)
-    }
-}
-
-PlaygroundPage.current.setLiveView(GoalTrackerView())
+//
+//
+//import SwiftUI
+//import PlaygroundSupport
+//
+//struct GoalTrackerView: View {
+//    var body: some View {
+//        VStack {
+//            Text("Step goal")
+//
+//        }
+//        .frame(width: 320, height: 480)
+//    }
+//}
+//
+//PlaygroundPage.current.setLiveView(GoalTrackerView())
 
 
 /*:

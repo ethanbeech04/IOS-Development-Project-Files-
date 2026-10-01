@@ -8,25 +8,25 @@
  A `@State` property can hold any type, not just an `Int`. The view below tracks minutes with an `Int`. You are going to add a `Bool` and a `String` next to it.
  */
 
-
-import SwiftUI
-import PlaygroundSupport
-
-struct WorkoutView: View {
-    @State private var minutesExercised = 0
-
-    var body: some View {
-        VStack {
-            Text("Minutes: \(minutesExercised)")
-            Button("Add 10 minutes") {
-                minutesExercised += 10
-            }
-        }
-        .frame(width: 320, height: 480)
-    }
-}
-
-PlaygroundPage.current.setLiveView(WorkoutView())
+//
+//import SwiftUI
+//import PlaygroundSupport
+//
+//struct WorkoutView: View {
+//    @State private var minutesExercised = 0
+//
+//    var body: some View {
+//        VStack {
+//            Text("Minutes: \(minutesExercised)")
+//            Button("Add 10 minutes") {
+//                minutesExercised += 10
+//            }
+//        }
+//        .frame(width: 320, height: 480)
+//    }
+//}
+//
+//PlaygroundPage.current.setLiveView(WorkoutView())
 
 
 /*:
