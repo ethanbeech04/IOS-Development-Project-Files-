@@ -12,6 +12,18 @@ func forwards(name1: String, name2: String) -> Bool {
 }
 
 //:  Create a `[String]` collection using names of your friends and family. Call the collection's `sorted(by:)` function, passing in `forwards` as the argument. Store the result into `sortedCollection1`, then print the result. This should sort your collection alphabetically.
+let friendsAndFamily: [String] = [
+    "Jamie",
+    "Brad",
+    "Luke",
+    "Ryker",
+    "Kyker"
+]
+
+
+let sortedCollection1 = friendsAndFamily.sorted(by: forwards)
+
+print(sortedCollection1)
 
 
 

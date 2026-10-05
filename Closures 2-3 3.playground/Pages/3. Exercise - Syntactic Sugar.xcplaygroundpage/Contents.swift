@@ -9,7 +9,7 @@ let classmates = ["Michael", "Ray", "Avery", "Ryker", "Joey"]
 
 
 //:  Call the collection's `sorted(by:)` function using trailing closure syntax. Keep the parameter names, parameter types, and the `return` statement in your closure. The closure should sort the names alphabetically. Store the result in `sortedCollection3`, then print the result.
-let sortedCollection3 = classmates.sorted { (name1: String, name2: String) -> Bool in
+let sortedCollection3 = classmates.sorted { name1, name2 in
     return name1 < name2
 }
 
